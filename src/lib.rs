@@ -17,7 +17,7 @@ extern crate serde_json;
 /// # Examples:
 /// ```
 /// # #[macro_use]
-/// # extern crate decimal;
+/// # extern crate decimal_fixes_mirror;
 /// # fn main() {
 /// assert!(d128!(NaN).is_nan());
 /// assert!(d128!(0).is_zero());
@@ -77,17 +77,17 @@ bitflags! {
     ///
     /// ```
     /// # #[macro_use]
-    /// # extern crate decimal;
-    /// # use decimal::d128;
-    /// # use decimal::Status;
+    /// # extern crate decimal_fixes_mirror;
+    /// # use decimal_fixes_mirror::d128;
+    /// # use decimal_fixes_mirror::Status;
     /// # fn main() {
     /// assert_eq!(d128::get_status(), Status::empty());
     /// let _ = d128!(1) / &d128!(0);
-    /// assert!(d128::get_status().contains(decimal::Status::DIVISION_BY_ZERO));
+    /// assert!(d128::get_status().contains(decimal_fixes_mirror::Status::DIVISION_BY_ZERO));
     /// let _ = d128!(0) / &d128!(0);
-    /// assert!(d128::get_status().contains(decimal::Status::DIVISION_UNDEFINED));
+    /// assert!(d128::get_status().contains(decimal_fixes_mirror::Status::DIVISION_UNDEFINED));
     /// // The previous status flag was not cleared!
-    /// assert!(d128::get_status().contains(decimal::Status::DIVISION_BY_ZERO));
+    /// assert!(d128::get_status().contains(decimal_fixes_mirror::Status::DIVISION_BY_ZERO));
     /// # }
     pub struct Status: ::libc::uint32_t {
         /// Conversion syntax error.

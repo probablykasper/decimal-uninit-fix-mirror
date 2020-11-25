@@ -1,6 +1,6 @@
-extern crate decimal;
+extern crate decimal_fixes_mirror;
 
-use decimal::*;
+use decimal_fixes_mirror::*;
 use std::fmt;
 use std::fs::File;
 use std::path::Path;

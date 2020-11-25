@@ -1,9 +1,6 @@
 # decimal
 
-[![Travis](https://img.shields.io/travis/alkis/decimal.svg)](https://travis-ci.org/alkis/decimal)
-![Downloads](https://img.shields.io/crates/d/decimal.svg)
-[![Crates.io](https://img.shields.io/crates/v/decimal.svg)](https://crates.io/crates/decimal)
-![Apache license](https://img.shields.io/crates/l/decimal.svg)
+[![Crates.io](https://img.shields.io/crates/v/decimal.svg)](https://crates.io/crates/decimal_fixes_mirror)
 
 Decimal Floating Point arithmetic for rust based on the [decNumber
 library](http://speleotrove.com/decimal/decnumber.html).
@@ -15,7 +12,7 @@ to allow ergonomic use of this type.
 
 To emulate literals a macro is used `d128!`.
 
-[Documentation](https://docs.rs/decimal)
+[Documentation](https://docs.rs/decimal_fixes_mirror)
 
 # Example
 

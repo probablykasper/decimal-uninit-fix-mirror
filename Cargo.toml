@@ -1,17 +1,17 @@
 [package]
-name = "decimal"
-version = "2.0.4"
+name = "decimal_fixes_mirror"
+version = "2.0.4-fix1.0.0"
 authors = ["Alkis Evlogimenos <alkis@evlogimenos.com>"]
 build = "build.rs"
 description = "Decimal floating point arithmetic for Rust"
 readme = "README.md"
-repository = "https://github.com/alkis/decimal"
-documentation = "https://alkis.github.io/decimal"
+repository = "https://github.com/probablykasper/decimal_fixes_mirror"
+documentation = "https://probablykasper.github.io/decimal_fixes_mirror"
 keywords = ["decimal", "decNumber"]
 license = "Apache-2.0"
 
-[badges]
-travis-ci = { repository = "alkis/decimal" }
+# [badges]
+# travis-ci = { repository = "alkis/decimal" }
 
 [dependencies]
 bitflags = "1"
